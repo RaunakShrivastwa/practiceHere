@@ -22,5 +22,6 @@ export class QuestionServiceImpl implements QuestionService {
     listQuestions(): Promise<Question[]> {
         throw new Error("Method not implemented.");
     }
-
 }
+
+export default new QuestionServiceImpl();
