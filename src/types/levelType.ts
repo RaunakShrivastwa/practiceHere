@@ -1,0 +1,1 @@
+type Level = 'Easy' | 'Medium' | 'Hard';
