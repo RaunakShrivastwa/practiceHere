@@ -1,20 +1,28 @@
 import { Request, Response } from "express";
-import Service from "../../services/question.service/QuestionServiceImpl";
+import { ServiceImpl } from "../../Services/ServiceImpl";
+import { Question } from "../../models/question.model/Question";
+let service: ServiceImpl<Question> = new ServiceImpl<Question>("questions");
 class QuestionController {
 
     async createQuestion(req:Request,res:Response) {
         try{
             const questionData = req.body;
-            const newQuestion = await Service.createQuestion(questionData);
+            if(!questionData){
+                return res.status(400).json({message: "Invalid question data"});
+            }
+            const newQuestion = await service.create(questionData);
             return res.status(201).json(newQuestion);
         }catch(err){
-            return res.status(500).json({message: "Internal Server Error"});
+            return res.status(500).json({message: `Internal Server Error : ${err}`});
         }
     }
 
-    getQuestion() {
-        // Implementation for retrieving a question
-        // Call the service method to retrieve a question
+    async getAllQuestions(req:Request,res:Response) {
+        try{
+            return res.status(200).json(await service.findAll());
+        }catch(err){
+            return res.status(500).json({message: `Internal Server Error : ${err}`});
+        }
     }
 
     updateQuestion() {

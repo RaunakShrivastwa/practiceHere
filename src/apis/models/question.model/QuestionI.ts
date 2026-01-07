@@ -1,12 +1,12 @@
 export interface IQuestion {
     id: string;
     description: string;
-    constraint: string;
+    constraints: string;
     example: string;
-    testCase: string;
-    tag: string[];
+    testcase: string; // 'testCase' se 'testcase'
+    tag: string;
     level: Level;
-    supportedLanguages: string[];
-    createdBy: string;
-    companyTags: string[];
+    supportedlanguages?: string[]; // 'supportedLanguages' se 'supportedlanguages'
+    createdby: string; // 'createdBy' se 'createdby'
+    companytags: string; // 'companyTags' se 'companytags'
 }

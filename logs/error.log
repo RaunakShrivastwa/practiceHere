@@ -1,0 +1,4 @@
+[2026-01-07 17:05:03] [31merror[39m: Database connection failed: database "practice_db" does not exist
+[2026-01-07 23:17:38] [31merror[39m: Error: syntax error at or near ","
+[2026-01-07 23:18:40] [31merror[39m: Error: syntax error at or near ","
+[2026-01-07 23:19:01] [31merror[39m: Error: syntax error at or near ","
