@@ -1,8 +1,15 @@
-export class QuestionController {
+import { Request, Response } from "express";
+import Service from "../../services/question.service/QuestionServiceImpl";
+class QuestionController {
 
-    createQuestion() {
-        // Implementation for creating a question
-        // Call the service method to create a question
+    async createQuestion(req:Request,res:Response) {
+        try{
+            const questionData = req.body;
+            const newQuestion = await Service.createQuestion(questionData);
+            return res.status(201).json(newQuestion);
+        }catch(err){
+            return res.status(500).json({message: "Internal Server Error"});
+        }
     }
 
     getQuestion() {
@@ -26,3 +33,5 @@ export class QuestionController {
     }
 
 }
+
+export default new QuestionController();
