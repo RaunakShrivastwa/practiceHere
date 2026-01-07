@@ -1,5 +1,10 @@
-enum UserRole {
+export enum UserRole {
     ADMIN = 'ADMIN',
     STUDENT = 'STUDENT'
 }
-export default UserRole;
+
+export enum UserStatus {
+    ACTIVE = 'ACTIVE',
+    INACTIVE = 'INACTIVE',
+    BANNED = 'BANNED',
+}
