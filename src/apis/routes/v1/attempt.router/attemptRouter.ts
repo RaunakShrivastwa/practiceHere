@@ -1,5 +1,5 @@
 import { Router } from "express";
-import AttemptController from "../../controllers/attempt.controller/AttemptController";
+import AttemptController from "../../../controllers/attempt.controller/AttemptController";
 
 class AttemptRouter {
     public router: Router;

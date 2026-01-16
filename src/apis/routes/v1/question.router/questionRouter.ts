@@ -1,5 +1,5 @@
 import { Router } from "express";
-import QuestionController from "../../controllers/question.controller/QuestionController";
+import QuestionController from "../../../controllers/question.controller/QuestionController";
 
 class questionRouter{
     public router: Router;

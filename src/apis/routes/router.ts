@@ -1,6 +1,8 @@
 import { Router } from "express";
-import questionRouter from "./question.router/questionRouter";
-import userRouter from "./user.router/userRouter";
+import questionRouter from "./v1/question.router/questionRouter";
+import userRouter from "./v1/user.router/userRouter";
+import testCaseRouter from "./v1/testCaseRouter/testCaseRouter";
+import attemptRouter from "./v1/attempt.router/attemptRouter";
 
 class RouterV1 {
     public router: Router;
@@ -14,6 +16,8 @@ class RouterV1 {
         // Define your v1 routes here
         this.router.use('/questions', questionRouter);
         this.router.use('/users', userRouter);
+        this.router.use('/attempts', attemptRouter);
+        this.router.use('/testcases', testCaseRouter);
     }
 }
 
