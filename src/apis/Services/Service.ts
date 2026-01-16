@@ -4,5 +4,4 @@ export interface Service<T> {
     updateById(id: string, data: Partial<T>): Promise<T | null>;
     deleteById(id: string): Promise<boolean>;
     findAll(): Promise<T[]>;
-    
 }

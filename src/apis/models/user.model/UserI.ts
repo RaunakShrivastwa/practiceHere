@@ -13,9 +13,6 @@ export interface IUser {
     website: string;
     bio: string;
     status: UserStatus;
-    isEmailVerified: boolean;
-    isGithubVerified: boolean;
-    isLinkedInVerified: boolean;
     totalQuestionsSolved: number;
     easyQuestionsSolved: number;
     mediumQuestionsSolved: number;

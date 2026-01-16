@@ -517,3 +517,359 @@
 [2026-01-08 00:04:38] [32minfo[39m: Server is running on port 8000
 [2026-01-08 00:04:38] [32minfo[39m: Database connected successfully
 [2026-01-08 00:04:38] [32minfo[39m: Table questions created or already exists.
+[2026-01-11 15:02:01] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:02:01] [31merror[39m: Database connection failed: 
+[2026-01-11 15:10:48] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:10:48] [31merror[39m: Database connection failed: 
+[2026-01-11 15:10:51] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:10:51] [31merror[39m: Database connection failed: 
+[2026-01-11 15:10:55] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:10:55] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:01] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:01] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:04] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:04] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:06] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:06] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:12] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:12] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:15] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:15] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:16] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:16] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:49] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:49] [31merror[39m: Database connection failed: 
+[2026-01-11 15:11:55] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:11:55] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:00] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:00] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:05] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:05] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:15] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:15] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:17] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:17] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:25] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:25] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:26] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:26] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:30] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:30] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:35] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:35] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:40] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:40] [31merror[39m: Database connection failed: 
+[2026-01-11 15:12:44] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:12:44] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:14] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:14] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:18] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:18] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:23] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:23] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:35] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:35] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:40] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:40] [31merror[39m: Database connection failed: 
+[2026-01-11 15:13:45] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:13:45] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:00] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:00] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:03] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:03] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:05] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:06] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:08] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:08] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:13] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:13] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:19] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:19] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:21] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:21] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:22] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:22] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:34] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:34] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:36] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:36] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:37] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:37] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:40] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:40] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:45] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:45] [31merror[39m: Database connection failed: 
+[2026-01-11 15:14:48] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:14:48] [31merror[39m: Database connection failed: 
+[2026-01-11 15:32:16] [32minfo[39m: Server is running on port 8000
+[2026-01-11 15:32:16] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:15] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:15] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:28] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:28] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:42] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:42] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:47] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:47] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:49] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:49] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:55] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:55] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:58] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:58] [31merror[39m: Database connection failed: 
+[2026-01-11 16:12:59] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:12:59] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:02] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:02] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:27] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:27] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:39] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:39] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:43] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:43] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:46] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:47] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:48] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:48] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:51] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:51] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:55] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:55] [31merror[39m: Database connection failed: 
+[2026-01-11 16:13:56] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:13:56] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:06] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:06] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:10] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:10] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:14] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:14] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:16] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:16] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:17] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:17] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:20] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:20] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:26] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:26] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:29] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:29] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:31] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:31] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:35] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:35] [31merror[39m: Database connection failed: 
+[2026-01-11 16:14:38] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:14:38] [31merror[39m: Database connection failed: 
+[2026-01-11 16:15:04] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:15:04] [31merror[39m: Database connection failed: 
+[2026-01-11 16:15:05] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:15:05] [31merror[39m: Database connection failed: 
+[2026-01-11 16:15:08] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:15:08] [31merror[39m: Database connection failed: 
+[2026-01-11 16:15:09] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:15:09] [31merror[39m: Database connection failed: 
+[2026-01-11 16:15:11] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:15:11] [31merror[39m: Database connection failed: 
+[2026-01-11 16:16:09] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:16:09] [31merror[39m: Database connection failed: 
+[2026-01-11 16:16:12] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:16:12] [31merror[39m: Database connection failed: 
+[2026-01-11 16:16:14] [32minfo[39m: Server is running on port 8000
+[2026-01-11 16:16:14] [31merror[39m: Database connection failed: 
+[2026-01-11 18:08:22] [32minfo[39m: Server is running on port 8000
+[2026-01-11 18:08:22] [31merror[39m: Database connection failed: 
+[2026-01-11 18:08:26] [32minfo[39m: Server is running on port 8000
+[2026-01-11 18:08:26] [31merror[39m: Database connection failed: 
+[2026-01-14 22:25:02] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:25:02] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:27:39] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:27:39] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:00] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:00] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:01] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:01] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:04] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:04] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:06] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:06] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:09] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:09] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:35:12] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:35:12] [31merror[39m: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-01-14 22:37:55] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:37:55] [31merror[39m: Database connection failed: password authentication failed for user "admin,"
+[2026-01-14 22:39:00] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:39:00] [31merror[39m: Database connection failed: database "localhost" does not exist
+[2026-01-14 22:39:57] [32minfo[39m: Server is running on port 8000
+[2026-01-14 22:39:57] [32minfo[39m: Database connected successfully
+[2026-01-14 22:39:57] [32minfo[39m: Table attempts created or already exists.
+[2026-01-14 22:39:57] [32minfo[39m: Table questions created or already exists.
+[2026-01-14 23:36:44] [32minfo[39m: Server is running on port 8000
+[2026-01-14 23:36:44] [32minfo[39m: Database connected successfully
+[2026-01-14 23:36:44] [32minfo[39m: Table questions created or already exists.
+[2026-01-14 23:36:44] [32minfo[39m: Table attempts created or already exists.
+[2026-01-14 23:43:22] [32minfo[39m: Server is running on port 8000
+[2026-01-14 23:43:22] [32minfo[39m: Database connected successfully
+[2026-01-14 23:43:41] [32minfo[39m: Server is running on port 8000
+[2026-01-14 23:43:41] [32minfo[39m: Database connected successfully
+[2026-01-14 23:43:41] [32minfo[39m: Table questions created or already exists.
+[2026-01-14 23:43:41] [32minfo[39m: Table attempts created or already exists.
+[2026-01-14 23:43:45] [32minfo[39m: Server is running on port 8000
+[2026-01-14 23:43:45] [32minfo[39m: Database connected successfully
+[2026-01-14 23:43:45] [32minfo[39m: Table questions created or already exists.
+[2026-01-14 23:43:45] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 00:38:56] [32minfo[39m: Server is running on port 8000
+[2026-01-16 00:38:56] [31merror[39m: Database connection failed: 
+[2026-01-16 00:40:17] [32minfo[39m: Server is running on port 8000
+[2026-01-16 00:40:17] [31merror[39m: Database connection failed: 
+[2026-01-16 21:46:51] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:46:51] [32minfo[39m: Database connected successfully
+[2026-01-16 21:46:51] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:46:51] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:50:19] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:50:19] [32minfo[39m: Database connected successfully
+[2026-01-16 21:50:19] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:50:19] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:01] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:01] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:01] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:01] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:03] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:03] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:03] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:03] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:36] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:36] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:36] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:36] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:37] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:37] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:37] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:37] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:39] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:39] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:39] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:39] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:40] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:40] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:40] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:40] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:43] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:43] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:43] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:43] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:51:53] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:51:53] [32minfo[39m: Database connected successfully
+[2026-01-16 21:51:53] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:51:53] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:13] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:13] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:13] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:13] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:20] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:20] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:20] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:20] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:25] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:25] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:25] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:25] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:47] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:47] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:47] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:47] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:52] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:52] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:52] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:52] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:55] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:55] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:55] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:55] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:52:56] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:52:56] [32minfo[39m: Database connected successfully
+[2026-01-16 21:52:56] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:52:56] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:02] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:02] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:02] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:02] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:21] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:25] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:25] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:25] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:25] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:27] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:27] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:27] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:27] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:30] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:30] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:30] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:30] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:32] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:32] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:32] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:32] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:37] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:37] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:37] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:37] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:53:46] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:53:46] [32minfo[39m: Database connected successfully
+[2026-01-16 21:53:46] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:53:46] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:54:36] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:54:36] [32minfo[39m: Database connected successfully
+[2026-01-16 21:54:38] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:54:38] [32minfo[39m: Database connected successfully
+[2026-01-16 21:54:38] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:54:38] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:54:40] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:54:40] [32minfo[39m: Database connected successfully
+[2026-01-16 21:54:40] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:54:40] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:54:42] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:54:42] [32minfo[39m: Database connected successfully
+[2026-01-16 21:54:42] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:54:43] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:55:04] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:55:04] [32minfo[39m: Database connected successfully
+[2026-01-16 21:55:04] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:55:04] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:55:11] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:55:11] [32minfo[39m: Database connected successfully
+[2026-01-16 21:55:11] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:55:11] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:55:52] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:55:52] [32minfo[39m: Database connected successfully
+[2026-01-16 21:55:52] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:55:52] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:15] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:15] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:15] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:15] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:17] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:17] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:17] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:17] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:17] [32minfo[39m: Table users created or already exists.
+[2026-01-16 21:56:21] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:21] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:21] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:21] [32minfo[39m: Table users created or already exists.
+[2026-01-16 21:56:21] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:39] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:39] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:39] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:39] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:39] [32minfo[39m: Table users created or already exists.
+[2026-01-16 21:56:40] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:40] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:40] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:40] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:40] [32minfo[39m: Table users created or already exists.
+[2026-01-16 21:56:47] [32minfo[39m: Server is running on port 8000
+[2026-01-16 21:56:47] [32minfo[39m: Database connected successfully
+[2026-01-16 21:56:47] [32minfo[39m: Table questions created or already exists.
+[2026-01-16 21:56:47] [32minfo[39m: Table attempts created or already exists.
+[2026-01-16 21:56:47] [32minfo[39m: Table users created or already exists.

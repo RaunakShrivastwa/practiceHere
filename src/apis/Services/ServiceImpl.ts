@@ -36,6 +36,5 @@ export class ServiceImpl<T> implements Service<T> {
         }
     }
 
-
 }
 

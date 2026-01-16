@@ -1,7 +1,6 @@
 import dataBase from "../../config/db.config/dataBase";
 import { logger } from "../../utils/logger/Logger";
 
-
 export class Repositery<T> {
     private tableName: string;
     private pool: any;
@@ -30,6 +29,68 @@ export class Repositery<T> {
                 updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             );
         `;
+
+            await this.pool.query(query);
+            logger.info(`Table ${this.tableName} created or already exists.`);
+            return "Question table created successfully";
+        } catch (err: any) {
+            logger.error(`Error: ${err.message}`);
+            return `Error creating ${this.tableName} table: ${err.message}`;
+        }
+    }
+    
+    async createUserTable(): Promise<any> {
+        // console.log("chut",this.tableName);
+        
+        try {
+            const query = `
+                CREATE TABLE IF NOT EXISTS ${this.tableName} (
+                    id VARCHAR(100) PRIMARY KEY,
+                    name VARCHAR(100) NOT NULL,
+                    email VARCHAR(100) UNIQUE NOT NULL,
+                    password VARCHAR(100) NOT NULL,
+                    username VARCHAR(100) UNIQUE NOT NULL,
+                    role VARCHAR(100) NOT NULL,
+                    country VARCHAR(100) NOT NULL,
+                    linkedInProfile VARCHAR(100),
+                    githubProfile VARCHAR(100),
+                    website VARCHAR(100),
+                    bio TEXT,
+                    status VARCHAR(100) NOT NULL,
+                    totalQuestionsSolved INTEGER NOT NULL,
+                    easyQuestionsSolved INTEGER NOT NULL,
+                    mediumQuestionsSolved INTEGER NOT NULL,
+                    hardQuestionsSolved INTEGER NOT NULL,
+                    totalSubmissions INTEGER NOT NULL,
+                    correctSubmissions INTEGER NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                ); 
+            `;
+            
+            await this.pool.query(query);
+            logger.info(`Table ${this.tableName} created or already exists.`);
+            return `${this.tableName} table created successfully`;
+        } catch (err: any) {
+            logger.error(`Error: ${err.message}`);
+            throw new Error(err);
+        }
+    }
+
+    async createAttemptTable(): Promise<string> {
+        try {
+            const query = `
+                CREATE TABLE IF NOT EXISTS ${this.tableName} (
+                    id VARCHAR(100) PRIMARY KEY,
+                    user_id VARCHAR(100) NOT NULL,
+                    question_id VARCHAR(100) NOT NULL,
+                    status VARCHAR(100) NOT NULL,
+                    passed_test_cases INTEGER NOT NULL,
+                    total_test_cases INTEGER NOT NULL,
+                    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                );
+            `;
 
             await this.pool.query(query);
             logger.info(`Table ${this.tableName} created or already exists.`);
@@ -97,7 +158,5 @@ export class Repositery<T> {
         const result = await this.pool.query(query, [id]);
         return result.rowCount > 0;
     }
-
-    
 
 }

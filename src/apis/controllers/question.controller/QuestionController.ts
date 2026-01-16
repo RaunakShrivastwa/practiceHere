@@ -1,7 +1,9 @@
 import { Request, Response } from "express";
 import { ServiceImpl } from "../../Services/ServiceImpl";
 import { Question } from "../../models/question.model/Question";
+
 let service: ServiceImpl<Question> = new ServiceImpl<Question>("questions");
+
 class QuestionController {
 
     async createQuestion(req:Request,res:Response) {
