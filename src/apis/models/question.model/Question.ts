@@ -1,12 +1,13 @@
+import mongoose from "mongoose";
 import { IQuestion } from "./QuestionI";
 
 
-export class Question {
+export class Question implements IQuestion {
     public id: string;
     public description: string;
     public constraints: string;
     public example: string;
-    public testcase: string; // Lowercase
+    public testcase: mongoose.Schema.Types.ObjectId; // Lowercase
     public tag: string;
     public level: Level;
     public supportedlanguages?: string[]; // Lowercase + Array type match

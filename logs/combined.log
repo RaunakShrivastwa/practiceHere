@@ -517,3 +517,22 @@
 [2026-01-08 00:04:38] [32minfo[39m: Server is running on port 8000
 [2026-01-08 00:04:38] [32minfo[39m: Database connected successfully
 [2026-01-08 00:04:38] [32minfo[39m: Table questions created or already exists.
+[2026-01-11 00:54:16] [32minfo[39m: Server is running on port 8000
+[2026-01-11 00:54:16] [31merror[39m: Database connection failed: 
+[2026-01-11 14:24:07] [32minfo[39m: Server is running on port 8000
+[2026-01-11 14:24:07] [32minfo[39m: Database connected successfully
+[2026-01-11 14:24:07] [32minfo[39m: Table questions created or already exists.
+[2026-01-11 14:33:56] [32minfo[39m: Server is running on port 8000
+[2026-01-11 14:33:56] [32minfo[39m: Database connected successfully
+[2026-01-11 14:33:56] [32minfo[39m: Table questions created or already exists.
+[2026-01-11 14:33:59] [32minfo[39m: Server is running on port 8000
+[2026-01-11 14:33:59] [32minfo[39m: Database connected successfully
+[2026-01-11 14:33:59] [32minfo[39m: Table questions created or already exists.
+[2026-01-11 14:34:11] [32minfo[39m: Server is running on port 8000
+[2026-01-11 14:34:11] [32minfo[39m: Database connected successfully
+[2026-01-11 14:34:16] [32minfo[39m: Server is running on port 8000
+[2026-01-11 14:34:16] [32minfo[39m: Database connected successfully
+[2026-01-11 14:34:16] [32minfo[39m: Connecting to MongoDB...
+[2026-01-11 14:34:17] [32minfo[39m: Successfully connected to MongoDB
+[2026-01-11 14:34:17] [32minfo[39m: MongoDB connected successfully
+[2026-01-11 14:34:17] [32minfo[39m: Table questions created or already exists.

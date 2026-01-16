@@ -4,6 +4,7 @@ import { logger } from "./utils/logger/Logger";
 import dataBase from "./config/db.config/dataBase";
 import { Repositery } from "./apis/repository/Repositery";
 import router from "./apis/routes/v1/router";
+import { connectDB } from "./config/db.config/mongoDb";
 dotenv.config();
 
 const app = express();
@@ -23,5 +24,6 @@ app.listen(PORT, (err : any) => {
 async function startServer(){
     logger.info(`Server is running on port ${PORT}`);
     await dataBase.connectDatabase();
+    await connectDB();
     new Repositery("questions").createQuestionTable();    
 }

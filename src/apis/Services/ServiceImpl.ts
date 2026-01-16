@@ -17,7 +17,11 @@ export class ServiceImpl<T> implements Service<T> {
     }
 
     findById(id: string): Promise<T | null> {
-        throw new Error("Method not implemented.");
+       try{
+        return this.repo.findByID(id);
+       }catch(err){
+        throw new Error(err);
+       }
     }
 
     updateById(id: string, data: Partial<T>): Promise<T | null> {
