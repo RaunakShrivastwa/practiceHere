@@ -85,7 +85,7 @@ export class Repositery<T> {
         return result.rows;
     }
 
-    async findByID(id: number): Promise<T | null> {
+    async findByID(id: string): Promise<T | null> {
         const query = `SELECT * FROM ${this.tableName} WHERE id = $1;`;
         const result = await this.pool.query(query, [id]);
         return result.rows.length ? result.rows[0] : null;

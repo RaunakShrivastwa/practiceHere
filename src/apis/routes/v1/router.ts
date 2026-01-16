@@ -1,5 +1,6 @@
 import { Router } from "express";
 import questionRouter from "./question.routes/questionRouter";
+import testCaseRouter from "./testCaseRouter/testCaseRouter";
 
 class RouterV1 {
     public router: Router;
@@ -12,6 +13,7 @@ class RouterV1 {
     initRoutes() {
         // Define your v1 routes here
         this.router.use('/questions', questionRouter);
+        this.router.use('/testcases', testCaseRouter);
     }
 }
 

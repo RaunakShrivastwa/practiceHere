@@ -1,9 +1,11 @@
+import mongoose from "mongoose";
+
 export interface IQuestion {
     id: string;
     description: string;
     constraints: string;
     example: string;
-    testcase: string; // 'testCase' se 'testcase'
+    testcase?:mongoose.Schema.Types.ObjectId;
     tag: string;
     level: Level;
     supportedlanguages?: string[]; // 'supportedLanguages' se 'supportedlanguages'
