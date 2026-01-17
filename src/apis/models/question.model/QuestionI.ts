@@ -4,8 +4,8 @@ export interface IQuestion {
     id: string;
     description: string;
     constraints: string;
-    example: string;
-    testcase?:mongoose.Schema.Types.ObjectId;
+    example?: string;
+    testcase?:string;
     tag: string;
     level: Level;
     supportedlanguages?: string[]; // 'supportedLanguages' se 'supportedlanguages'

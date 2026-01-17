@@ -7,7 +7,7 @@ export class Question implements IQuestion {
     public description: string;
     public constraints: string;
     public example: string;
-    public testcase: mongoose.Schema.Types.ObjectId; // Lowercase
+    public testcase: string;
     public tag: string;
     public level: Level;
     public supportedlanguages?: string[]; // Lowercase + Array type match
