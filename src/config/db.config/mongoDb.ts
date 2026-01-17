@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import { logger } from '../../utils/logger/Logger';
 
-dotenv.config();  // Load environment variables from .env file
+dotenv.config();
 
-// Create an asynchronous function that connects to MongoDB
+
 export const connectDB = async (): Promise<void> => {
   try {
     logger.info('Connecting to MongoDB...')

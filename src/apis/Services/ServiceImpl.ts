@@ -25,7 +25,11 @@ export class ServiceImpl<T> implements Service<T> {
     }
 
     updateById(id: string, data: Partial<T>): Promise<T | null> {
-        throw new Error("Method not implemented.");
+        try{
+        return this.repo.updateById(id,data);
+       }catch(err){
+        throw new Error(err);
+       }
     }
 
     deleteById(id: string): Promise<boolean> {
