@@ -5,12 +5,34 @@ import dataBase from "./config/db.config/dataBase";
 import { Repositery } from "./apis/repository/Repositery";
 import router from "./apis/routes/router";
 import { connectDB } from "./config/db.config/mongoDb";
+import { createBullBoard } from '@bull-board/api';
+import { BullMQAdapter } from '@bull-board/api/BullMQAdapter'; // Note this path
+import { ExpressAdapter } from '@bull-board/express';
+import { submissionQueue } from "./queues/submission.queue.js/submissionQueue";
+import cors from "cors";
+
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.json());
-app.use('/api/practice/v1', router);
+// frontend  http://localhost:5173'
+app.use(cors({
+    origin: '*',
+    credentials: true,
+    methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
+}));
+app.use('/api/practice/v1',router);
+
+// for the bull Board
+const serverAdapter = new ExpressAdapter();
+serverAdapter.setBasePath('/admin/queues');
+createBullBoard({
+  queues: [new BullMQAdapter(submissionQueue)],
+  serverAdapter: serverAdapter,
+});
+
+app.use('/admin/queues', serverAdapter.getRouter());
 
 
 app.listen(PORT, (err: any) => {

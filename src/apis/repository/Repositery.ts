@@ -159,4 +159,22 @@ export class Repositery<T> {
         return result.rowCount > 0;
     }
 
+    async updateById(id: string, data: Partial<T>): Promise<T | null> {
+        const fields = Object.keys(data);
+        const set = fields.map((field, i) => `"${field}" = $${i + 1}`).join(', ');
+        const query = `
+        UPDATE ${this.tableName}
+        SET ${set}, updated_at = CURRENT_TIMESTAMP
+        WHERE id = $${fields.length + 1}
+        RETURNING *;
+    `;
+
+        const values = [...Object.values(data), id];
+        const result = await this.pool.query(query, values);
+        return result.rows[0] || null;
+    }
+
+
+
+
 }

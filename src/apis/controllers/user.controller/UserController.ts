@@ -18,7 +18,20 @@ class UserController {
         }
     }
 
-    async getAllUsers(req: Request, res: Response) {}
+    async signUp(req: Request, res: Response) {
+        try {
+            const userData = req.body;
+            if (!userData.username || !userData.email || !userData.password) {
+                return res.json({ 'message': 'Required fields missing. Please ensure **username**, **email**, and **password** are provided.' })
+            }
+            if (userData.role) userData.role = 'student';
+            
+        } catch (error) {
+
+        }
+    }
+
+    async getAllUsers(req: Request, res: Response) { }
 
     updateUser() {
         // Implementation for updating a User

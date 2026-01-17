@@ -12,6 +12,7 @@ class testCaseRouter{
     initRoutes(){
         this.router.post('/create/testCases/:questionId', testCaseController.createTestCase);
         this.router.get('/all', testCaseController.getAlltestCases);
+        this.router.get('/by/question/id/:id',testCaseController.getTestCaseByQuestionId);
     }
 }
 

@@ -18,6 +18,7 @@ class RouterV1 {
         this.router.use('/users', userRouter);
         this.router.use('/attempts', attemptRouter);
         this.router.use('/testcases', testCaseRouter);
+        this.router.use('/submission',submissionRouter);
     }
 }
 

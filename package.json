@@ -5,12 +5,16 @@
   "main": "dist/server.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev --clear --respawn --transpile-only src/server.ts"
+    "start": "ts-node-dev --clear --respawn --transpile-only src/server.ts",
+    "start:worker": "ts-node src/queues/submission.worker/submissionWorker.ts"
   },
   "keywords": [],
   "author": "Abhijeet kumar",
   "license": "ISC",
   "dependencies": {
+    "@bull-board/api": "^6.16.2",
+    "@bull-board/express": "^6.16.2",
+    "bullmq": "^5.66.5",
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
