@@ -6,7 +6,7 @@ import { Repositery } from "./apis/repository/Repositery";
 import router from "./apis/routes/router";
 import { connectDB } from "./config/db.config/mongoDb";
 import { createBullBoard } from '@bull-board/api';
-import { BullMQAdapter } from '@bull-board/api/BullMQAdapter'; // Note this path
+import { BullMQAdapter } from '@bull-board/api/bullMQAdapter'; // Note this path
 import { ExpressAdapter } from '@bull-board/express';
 import { submissionQueue } from "./queues/submission.queue.js/submissionQueue";
 import cors from "cors";
@@ -51,6 +51,7 @@ async function startServer() {
         new Repositery("questions").createQuestionTable();
         new Repositery("users").createUserTable();
         new Repositery("attempts").createAttemptTable();
+        new Repositery("auth").createAttemptTable();
     } catch (err) {
         console.log(err);
 

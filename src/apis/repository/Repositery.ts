@@ -38,10 +38,10 @@ export class Repositery<T> {
             return `Error creating ${this.tableName} table: ${err.message}`;
         }
     }
-    
+
     async createUserTable(): Promise<any> {
         // console.log("chut",this.tableName);
-        
+
         try {
             const query = `
                 CREATE TABLE IF NOT EXISTS ${this.tableName} (
@@ -67,7 +67,7 @@ export class Repositery<T> {
                     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
                 ); 
             `;
-            
+
             await this.pool.query(query);
             logger.info(`Table ${this.tableName} created or already exists.`);
             return `${this.tableName} table created successfully`;
@@ -100,6 +100,28 @@ export class Repositery<T> {
             return `Error creating ${this.tableName} table: ${err.message}`;
         }
     }
+
+    async createAuthTable(): Promise<string> {
+        try {
+            const query = `
+                CREATE TABLE IF NOT EXISTS auth (
+                    user_id VARCHAR(100) PRIMARY KEY,
+                    CONSTRAINT fk_auth_user
+                        FOREIGN KEY (user_id)
+                        REFERENCES users(id)
+                        ON DELETE CASCADE
+                );
+            `;
+            await this.pool.query(query);
+
+            logger.info(`Table ${this.tableName} created or already exists.`);
+            return `${this.tableName} table created successfully`;
+        } catch (err: any) {
+            logger.error(`Error: ${err.message}`);
+            return `Error creating ${this.tableName} table: ${err.message}`;
+        }
+    }
+
 
     async create(data: T): Promise<T> {
         try {
@@ -151,11 +173,22 @@ export class Repositery<T> {
         const result = await this.pool.query(query, [id]);
         return result.rows.length ? result.rows[0] : null;
     }
+    
+    async findByEmail(email: string): Promise<T | null> {
+        const query = `SELECT * FROM ${this.tableName} WHERE email = $1;`;
+        const result = await this.pool.query(query, [email]);
+        return result.rows.length ? result.rows[0] : null;
+    }
 
-    async delete(id: number): Promise<boolean> {
-
+    async delete(id: string): Promise<boolean> {
         const query = `DELETE FROM ${this.tableName} WHERE id = $1;`;
         const result = await this.pool.query(query, [id]);
+        return result.rowCount > 0;
+    }
+
+    async deleteByEmail(email: String): Promise<boolean> {
+        const query = `DELETE FROM ${this.tableName} WHERE email = $1;`;
+        const result = await this.pool.query(query, [email]);
         return result.rowCount > 0;
     }
 
@@ -174,7 +207,14 @@ export class Repositery<T> {
         return result.rows[0] || null;
     }
 
+    async findByEmailOrUserName(email: string, username: string): Promise<T | null> {
+        try {
+            const query = `SELECT * FROM ${this.tableName} where email = $1 or username = $2`;
+            const result = await this.pool.query(query, [email, username]);
 
-
-
+            return result.rows.length ? result.rows[0] : null;
+        } catch (error) {
+            throw new Error(error);
+        }
+    }
 }
