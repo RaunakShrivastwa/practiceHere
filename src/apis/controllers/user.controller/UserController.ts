@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { ServiceImpl } from "../../Services/ServiceImpl";
+import { ServiceImpl } from "../../services/ServiceImpl";
 import { User } from "../../models/user.model/User";
 import { v4 as uuidv4 } from 'uuid';
 import bcrypt from 'bcrypt';
@@ -94,7 +94,6 @@ class UserController {
             const accessToken = generateAccessToken(accessPayload);
             const refreshToken = generateRefreshToken(refreshPayload);
 
-
             let id = uuidv4();
 
             delete getUser.password;
@@ -152,9 +151,25 @@ class UserController {
         }
     }
 
-    async listUsers() {
-        // Implementation for listing all Users
-        // Call the service method to list all Users
+    async listUsers(req: Request, res: Response) {
+        try {
+            const { role, email } = req.user;
+            const targetId = req.params.id;
+
+            const profile = await service.findById(targetId);
+            delete profile.password;
+
+            return res.status(200).json({
+                message: "User fetched successfully.",
+                data: profile
+            });
+
+        } catch (error) {
+            return res.status(500).json({
+                message: "An unexpected error occurred while fetching the user.",
+                error: error instanceof Error ? error.message : error
+            });
+        }
     }
 }
 

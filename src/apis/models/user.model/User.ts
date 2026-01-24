@@ -15,9 +15,7 @@ export class User {
     public website: string;
     public bio: string;
     public status: UserStatus;
-    public isEmailVerified: boolean;
-    public isGithubVerified: boolean;
-    public isLinkedInVerified: boolean;
+    public refreshToken: string;
     public totalQuestionsSolved: number;
     public easyQuestionsSolved: number;
     public mediumQuestionsSolved: number;
@@ -42,9 +40,7 @@ export class User {
         this.website = data.website;
         this.bio = data.bio;
         this.status = data.status;
-        this.isEmailVerified = data.isEmailVerified;
-        this.isGithubVerified = data.isGithubVerified;
-        this.isLinkedInVerified = data.isLinkedInVerified;
+        this.refreshToken = data.refreshToken;
         this.totalQuestionsSolved = data.totalQuestionsSolved;
         this.easyQuestionsSolved = data.easyQuestionsSolved;
         this.mediumQuestionsSolved = data.mediumQuestionsSolved;

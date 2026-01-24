@@ -16,6 +16,11 @@ export class ServiceImpl<T> implements Service<T> {
         }
     }
 
+    async createMany(data: T[]): Promise<T[]> {
+        return await this.repo.createMany(data);
+    }
+
+
     findById(id: string): Promise<T | null> {
         try {
             return this.repo.findByID(id);
@@ -41,7 +46,11 @@ export class ServiceImpl<T> implements Service<T> {
     }
 
     deleteById(id: string): Promise<boolean> {
-        throw new Error("Method not implemented.");
+        try {
+            return this.repo.delete(id);
+        } catch (err) {
+            throw new Error(err);
+        }
     }
 
     deleteByEmail(email: string): Promise<boolean> {
@@ -62,7 +71,7 @@ export class ServiceImpl<T> implements Service<T> {
 
     findByEmailOrUserName(email: string, username: string): Promise<T | null> {
         try {
-            return this.repo.findByEmailOrUserName(email,username);
+            return this.repo.findByEmailOrUserName(email, username);
         } catch (error) {
             throw new Error(error);
         }

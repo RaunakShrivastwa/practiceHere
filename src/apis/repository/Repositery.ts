@@ -57,6 +57,7 @@ export class Repositery<T> {
                     website VARCHAR(100),
                     bio TEXT,
                     status VARCHAR(100) NOT NULL,
+                    refreshToken VARCHAR(100) NOT NULL,
                     totalQuestionsSolved INTEGER NOT NULL,
                     easyQuestionsSolved INTEGER NOT NULL,
                     mediumQuestionsSolved INTEGER NOT NULL,
@@ -123,6 +124,8 @@ export class Repositery<T> {
     }
 
 
+    // SQL QUERY
+
     async create(data: T): Promise<T> {
         try {
             const columns: string[] = [];
@@ -162,6 +165,47 @@ export class Repositery<T> {
         }
     }
 
+    async createMany(data: T[]): Promise<T[]> {
+        if (!Array.isArray(data) || data.length === 0) {
+            throw new Error("Bulk insert data cannot be empty");
+        }
+
+        // 1️⃣ Collect all unique columns
+        const columns = Array.from(
+            new Set(data.flatMap(obj => Object.keys(obj)))
+        );
+
+        const values: any[] = [];
+        let index = 1;
+
+        // 2️⃣ Build placeholders dynamically
+        const placeholders = data.map(row => {
+            const rowPlaceholders = columns.map(col => {
+                let value = row[col];
+
+                if (value === undefined) value = null;
+                if (typeof value === "object" && value !== null) {
+                    value = JSON.stringify(value); // JSON / JSONB
+                }
+
+                values.push(value);
+                return `$${index++}`;
+            });
+
+            return `(${rowPlaceholders.join(", ")})`;
+        });
+
+        // 3️⃣ Final query
+        const query = `
+            INSERT INTO ${this.tableName} (${columns.join(", ")})
+            VALUES ${placeholders.join(", ")}
+            RETURNING *;
+        `;
+
+        const result = await this.pool.query(query, values);
+        return result.rows;
+    }
+
     async getAll(): Promise<T[]> {
         const query = `SELECT * FROM ${this.tableName};`;
         const result = await this.pool.query(query);
@@ -173,7 +217,7 @@ export class Repositery<T> {
         const result = await this.pool.query(query, [id]);
         return result.rows.length ? result.rows[0] : null;
     }
-    
+
     async findByEmail(email: string): Promise<T | null> {
         const query = `SELECT * FROM ${this.tableName} WHERE email = $1;`;
         const result = await this.pool.query(query, [email]);
@@ -196,11 +240,11 @@ export class Repositery<T> {
         const fields = Object.keys(data);
         const set = fields.map((field, i) => `"${field}" = $${i + 1}`).join(', ');
         const query = `
-        UPDATE ${this.tableName}
-        SET ${set}, updated_at = CURRENT_TIMESTAMP
-        WHERE id = $${fields.length + 1}
-        RETURNING *;
-    `;
+            UPDATE ${this.tableName}
+            SET ${set}, updated_at = CURRENT_TIMESTAMP
+            WHERE id = $${fields.length + 1}
+            RETURNING *;
+        `;
 
         const values = [...Object.values(data), id];
         const result = await this.pool.query(query, values);

@@ -13,6 +13,7 @@ export interface IUser {
     website: string;
     bio: string;
     status: UserStatus;
+    refreshToken: string;
     totalQuestionsSolved: number;
     easyQuestionsSolved: number;
     mediumQuestionsSolved: number;
