@@ -2,28 +2,37 @@ import { Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 import { addSubmissionToQueue } from '../../../queues/submission.queue.js/submissionQueue'; // Tumhari file ka path
 import { logger } from '../../../utils/logger/Logger';
+import { ServiceImpl } from '../../services/ServiceImpl';
+import { Question } from '../../models/question.model/Question';
+import { TestCaseModel } from '../../models/testCase/testCase';
+
+let service: ServiceImpl<Question> = new ServiceImpl<Question>("questions");
 
 export class SubmissionController {
-    private dummyTestCases: Record<string, any[]> = {
-        "1": [
-            { input: [1, 2, 3, 4], expected: 10 },
-            { input: [10, 20, 30], expected: 60 }
-        ]
-    };
 
-    public handleSubmission = async (req: Request, res: Response): Promise<void> => {
+    public handleSubmission = async (req: Request, res: Response): Promise<any> => {
         try {
             const { language, code, problemId } = req.body;
-            const testCases = this.dummyTestCases[problemId] || this.dummyTestCases["1"];
+            if(!problemId){
+                return res.status(404).json({Error:`Question does't exits`})
+            }
+            let question = await service.findById(problemId);
+            if(!question){
+                return res.status(404).json({Error:`Question does't exits with id ${problemId}`})
+            }
+            const {testCases} = await TestCaseModel.findOne({ questionId: problemId }).select('-testCases.isHidden');
+            console.log(testCases);
+
             const submissionId = uuidv4();
             await addSubmissionToQueue({
                 submissionId,
                 language,
                 code,
                 testCases,
-                userId: "user_123"
+                userId: '123',
+                problemId,
             });
-            logger.info(`[Controller] Submission ${submissionId} queued.`)
+            logger.info(`[Controller] Submission ${submissionId} queued.`);
 
             // 3. User ko turant "Pending" status bhej do
             res.json({ 

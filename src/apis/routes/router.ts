@@ -16,7 +16,7 @@ class RouterV1 {
 
     initRoutes() {
         // Define your v1 routes here
-        this.router.use('/questions', authMiddleware, questionRouter);
+        this.router.use('/questions', questionRouter);
         this.router.use('/users', userRouter);
         this.router.use('/attempts', attemptRouter);
         this.router.use('/testcases', testCaseRouter);

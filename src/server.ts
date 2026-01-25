@@ -52,6 +52,7 @@ async function startServer() {
         new Repositery("users").createUserTable();
         new Repositery("attempts").createAttemptTable();
         new Repositery("auth").createAttemptTable();
+        new Repositery('submission').createSubmissionTable();
     } catch (err) {
         console.log(err);
 

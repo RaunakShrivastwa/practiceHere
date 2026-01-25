@@ -5,5 +5,7 @@ export const submissionQueue = new Queue('submissions', {
 });
 
 export const addSubmissionToQueue = async (data: any) => {
+    console.log("worki");
+    
     await submissionQueue.add('execute-code', data);
 };

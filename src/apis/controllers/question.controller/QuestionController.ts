@@ -41,6 +41,18 @@ class QuestionController {
         }
     }
 
+    async createQuestion(req: Request, res: Response) {
+        try{
+            if(!req.body){
+                return res.status(400).json({message:`Bad Request, Question data is required`});
+            }
+            let question = await service.create(req.body);
+            return res.status(201).json({message:`Question created successfully`,data:question});
+        }catch(err){
+            return res.status(500).json({message:`Internal Server Error : ${err}`});
+        }
+    }
+       
     async getAllQuestions(req: Request, res: Response) {
         try {
             return res.status(200).json(await service.findAll());

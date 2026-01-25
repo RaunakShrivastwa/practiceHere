@@ -1,5 +1,5 @@
 import { Repositery } from "../repository/Repositery";
-import { Service } from "./Service";
+import { Service } from "./service";
 
 export class ServiceImpl<T> implements Service<T> {
     private repo: Repositery<T>;

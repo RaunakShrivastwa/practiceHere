@@ -12,14 +12,14 @@ class TestCaseController {
         }
 
         try {
-            let question = await service.findById(req.params.questionId);
+            let question:any = await service.findById(req.params.questionId);
             if (!question) {
                 return res.status(404).json({ message: "Question not found" });
             }
             req.body.questionId = req.params.questionId;
             let testCase = await TestCaseModel.create(req.body);
-            let q = await service.updateById(question.id, { testcase: testCase._id.toString() });
-            return res.status(201).json({ "testCases": testCase, "question": q });
+            await service.updateById(question.id, { testcase: testCase._id.toString() });
+            return res.status(201).json({ "testCases added": testCase});
         } catch (err) {
             return res.status(500).json({ message: `Internal Server Error : ${err}` });
         }

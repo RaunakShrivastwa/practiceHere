@@ -3,7 +3,6 @@ import { IQuestion } from "./QuestionI";
 
 
 export class Question implements IQuestion {
-    public id: string;
     public description: string;
     public constraints: string;
     public example: string;
@@ -15,7 +14,6 @@ export class Question implements IQuestion {
     public companytags: string; // Lowercase
 
     constructor(data: IQuestion) {
-        this.id = data.id;
         this.description = data.description;
         this.constraints = data.constraints;
         this.example = data.example;

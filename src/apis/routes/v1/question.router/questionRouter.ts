@@ -11,6 +11,7 @@ class questionRouter{
     initRoutes() {
         // Define question-related routes here
         this.router.post('/create/many/question', QuestionController.createMultipleQuestions);
+         this.router.post('/create/question', QuestionController.createQuestion);
         this.router.get('/list/all/questions', QuestionController.getAllQuestions);
         this.router.put('/update/question/:id', QuestionController.updateQuestion);
         this.router.delete('/delete/question/:id', QuestionController.deleteQuestion);

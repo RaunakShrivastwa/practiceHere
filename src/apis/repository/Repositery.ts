@@ -14,8 +14,8 @@ export class Repositery<T> {
     async createQuestionTable(): Promise<string> {
         try {
             const query = `
-            CREATE TABLE IF NOT EXISTS ${this.tableName} (
-                id VARCHAR(100) PRIMARY KEY,       -- Class mein string hai, isliye VARCHAR use kiya
+                CREATE TABLE IF NOT EXISTS ${this.tableName} (
+                id SERIAL PRIMARY KEY,       -- Class mein string hai, isliye VARCHAR use kiya
                 description TEXT NOT NULL,
                 constraints TEXT,               -- 'constraint' SQL reserved word ho sakta hai, isliye constraint_text ya "constraint" use karein
                 example TEXT,
@@ -40,8 +40,6 @@ export class Repositery<T> {
     }
 
     async createUserTable(): Promise<any> {
-        // console.log("chut",this.tableName);
-
         try {
             const query = `
                 CREATE TABLE IF NOT EXISTS ${this.tableName} (
@@ -57,7 +55,7 @@ export class Repositery<T> {
                     website VARCHAR(100),
                     bio TEXT,
                     status VARCHAR(100) NOT NULL,
-                    refreshToken VARCHAR(100) NOT NULL,
+                    refreshToken VARCHAR(100),
                     totalQuestionsSolved INTEGER NOT NULL,
                     easyQuestionsSolved INTEGER NOT NULL,
                     mediumQuestionsSolved INTEGER NOT NULL,
@@ -122,6 +120,33 @@ export class Repositery<T> {
             return `Error creating ${this.tableName} table: ${err.message}`;
         }
     }
+    
+async createSubmissionTable(): Promise<string> {
+    try {
+        const query = `
+            CREATE TABLE IF NOT EXISTS submissions (
+                id SERIAL PRIMARY KEY,
+                "userId" VARCHAR(100) NOT NULL,
+                "problemId" INTEGER REFERENCES questions(id) ON DELETE CASCADE,
+                code TEXT NOT NULL,
+                language VARCHAR(50) NOT NULL,
+                status VARCHAR(30) DEFAULT 'Pending',
+                "testCasesPassed" INTEGER DEFAULT 0,
+                "totalTestCases" INTEGER DEFAULT 0,
+                runtime VARCHAR(20),
+                memory VARCHAR(20),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+        `;
+
+        await this.pool.query(query);
+        logger.info(`Table submissions created or already exists.`);
+        return "Submission table created successfully";
+    } catch (err: any) {
+        logger.error(`Error creating submissions table: ${err.message}`);
+        return `Error creating submissions table: ${err.message}`;
+    }
+}
 
 
     // SQL QUERY
