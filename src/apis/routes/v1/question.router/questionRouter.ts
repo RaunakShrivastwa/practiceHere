@@ -10,11 +10,11 @@ class questionRouter{
     }   
     initRoutes() {
         // Define question-related routes here
-        this.router.post('/create/new/question', QuestionController.createQuestion);
+        this.router.post('/create/many/question', QuestionController.createMultipleQuestions);
         this.router.get('/list/all/questions', QuestionController.getAllQuestions);
         this.router.put('/update/question/:id', QuestionController.updateQuestion);
         this.router.delete('/delete/question/:id', QuestionController.deleteQuestion);
-        this.router.get('/get/question/:id', QuestionController.listQuestions);   
+        this.router.get('/get/question/:id', QuestionController.getQuestionById);   
     }
 }
 export default new questionRouter().router;

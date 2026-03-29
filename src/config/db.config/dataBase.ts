@@ -14,10 +14,7 @@ class Database {
       database: process.env.DB_NAME!,
       password: process.env.DB_PASS!,
       port: Number(process.env.DB_PORT) || 5432,
-      ssl:
-        process.env.NODE_ENV === "production"
-          ? { rejectUnauthorized: false }
-          : false,
+      ssl: process.env.NODE_ENV === "production" ? { rejectUnauthorized: false } : false,
     });
   }
 
@@ -36,7 +33,7 @@ class Database {
     return this.pool;
   }
 
-  
+
 
 }
 
